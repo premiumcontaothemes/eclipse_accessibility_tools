@@ -106,18 +106,24 @@ if(!$objPage->hasJQuery)
 			elem.attr('checked',true);
 			// set body class
 			jQuery('html,body').addClass(body_class);
+			// include css file
+			jQuery('head').append('<link id="css_acc_contrast" rel="stylesheet" type="text/css" href="acc_contrast.css">');
 		}
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
 			jQuery('html,body').removeClass(body_class);
+			// remove css file
+			jQuery('link#css_acc_contrast').remove();
 			
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
 				jQuery('html,body').addClass(body_class);
+				// include css file
+				jQuery('head').append('<link id="css_acc_contrast" rel="stylesheet" type="text/css" href="acc_contrast.css">')
 			} 
 			else
 			{
@@ -198,18 +204,24 @@ if(!$objPage->hasJQuery)
 			elem.attr('checked',true);
 			// set body class
 			jQuery('html,body').addClass(body_class);
+			// include css file
+			jQuery('head').append('<link id="css_acc_black-white" rel="stylesheet" type="text/css" href="acc_black-white.css">');
 		}
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
 			jQuery('html,body').removeClass(body_class);
+			// remove css file
+			jQuery('link#css_acc_black-white').remove();
 			
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
 				jQuery('html,body').addClass(body_class);
+				// include css file
+				jQuery('head').append('<link id="css_acc_black-white" rel="stylesheet" type="text/css" href="acc_black-white.css">');
 			} 
 			else
 			{
@@ -244,18 +256,24 @@ if(!$objPage->hasJQuery)
 			elem.attr('checked',true);
 			// set body class
 			jQuery('html,body').addClass(body_class);
+			// include css file
+			jQuery('head').append('<link id="css_acc_reverse_colors" rel="stylesheet" type="text/css" href="acc_reverse_colors.css">');
 		}
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
 			jQuery('html,body').removeClass(body_class);
+			// remove css file
+			jQuery('link#css_acc_acc_reverse_colors').remove();
 			
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
 				jQuery('html,body').addClass(body_class);
+				// include css file
+				jQuery('head').append('<link id="css_acc_reverse_colors" rel="stylesheet" type="text/css" href="acc_reverse_colors.css">');
 			} 
 			else
 			{
