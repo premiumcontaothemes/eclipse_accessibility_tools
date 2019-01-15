@@ -1,0 +1,276 @@
+<?php 
+// load jquery
+global $objPage;global $objPage;
+if(!$objPage->hasJQuery)
+{
+	$GLOBALS['TL_JAVASCRIPT'][] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'; 
+}
+?>
+
+
+<div id="accessibility_widget" class="accessibility_widget">
+
+<!-- fontsize -->
+<div id="fontsize_widget" class="fontsize_widget widget">
+	<input name="fontsize" type="number" min="-5" max="5" step="1" value="0">
+	<script>
+	/* <![CDATA[ */
+	jQuery(document).ready(function() 
+	{
+		var value = Number( localStorage.getItem('accessibility_fontsize') );
+		var elem = jQuery('#accessibility_widget input[name="fontsize"]');
+		var body_class = 'acc_fontsize_';
+		// set value
+		elem.val(value);
+		// set body class
+		jQuery('body').addClass(body_class+value);
+		// event listener
+		elem.change(function() 
+		{
+			// remove current body class
+			jQuery('body').removeClass(body_class+value);
+			// get new value
+			value = jQuery(this).val();
+			// update localStorage
+			localStorage.setItem('accessibility_fontsize',value);
+			// update body class
+			jQuery('body').addClass(body_class+value);
+			// log in console
+			console.log('Accessibility: Fontsize: '+value);
+		});
+	});
+	/* ]]> */
+	</script>
+</div>
+<!-- !default fonts -->
+<div id="default_fonts_widget" class="default_fonts widget">
+	<label for="">Default fonts only</label> 
+	<input name="default_fonts" type="checkbox" value="0">
+	<script>
+	/* <![CDATA[ */
+	jQuery(document).ready(function() 
+	{
+		var value = Number( localStorage.getItem('accessibility_default_fonts') );
+		var elem = jQuery('#accessibility_widget input[name="default_fonts"]');
+		var body_class = 'acc_default_fonts';
+		if(value > 0)
+		{
+			// set value and mark as checked
+			elem.val(1);
+			elem.attr('checked',true);
+			// set body class
+			jQuery('body').addClass(body_class);
+		}
+		// event listener
+		elem.change(function() 
+		{
+			// remove current body class
+			jQuery('body').removeClass(body_class);
+			
+			if(value == 0)
+			{
+				value = 1;
+				// update body class
+				jQuery('body').addClass(body_class);
+			} 
+			else
+			{
+				value = 0;
+			}
+			// set new value
+			elem.val( value );
+			// update localStorage
+			localStorage.setItem('accessibility_default_fonts',value);
+			// log in console
+			console.log('Accessibility: Default fonts: '+value);
+		});
+	});
+	/* ]]> */
+	</script>
+</div>
+<!-- !high constrast -->
+<div id="contrast_widget" class="contrast_widget widget">
+	<label for="contrast">High contrast</label> 
+	<input name="contrast" type="checkbox" value="0">
+	<script>
+	/* <![CDATA[ */
+	jQuery(document).ready(function() 
+	{
+		var value = Number( localStorage.getItem('accessibility_contrast') );
+		var elem = jQuery('#accessibility_widget input[name="contrast"]');
+		var body_class = 'acc_contrast';
+		if(value > 0)
+		{
+			// set value and mark as checked
+			elem.val(1);
+			elem.attr('checked',true);
+			// set body class
+			jQuery('body').addClass(body_class);
+		}
+		// event listener
+		elem.change(function() 
+		{
+			// remove current body class
+			jQuery('body').removeClass(body_class);
+			
+			if(value == 0)
+			{
+				value = 1;
+				// update body class
+				jQuery('body').addClass(body_class);
+			} 
+			else
+			{
+				value = 0;
+			}
+			// set new value
+			elem.val( value );
+			// update localStorage
+			localStorage.setItem('accessibility_contrast',value);
+			// log in console
+			console.log('Accessibility: Contrast: '+value);
+		});
+	});
+	/* ]]> */
+	</script>
+</div>
+<!-- !boldface -->
+<div id="boldface_widget" class="boldface_widget widget">
+	<label for="boldface">Boldface</label> 
+	<input name="boldface" type="checkbox" value="0">
+	<script>
+	/* <![CDATA[ */
+	jQuery(document).ready(function() 
+	{
+		var value = Number( localStorage.getItem('accessibility_boldface') );
+		var elem = jQuery('#accessibility_widget input[name="boldface"]');
+		var body_class = 'acc_boldface';
+		if(value > 0)
+		{
+			// set value and mark as checked
+			elem.val(1);
+			elem.attr('checked',true);
+			// set body class
+			jQuery('body').addClass(body_class);
+		}
+		// event listener
+		elem.change(function() 
+		{
+			// remove current body class
+			jQuery('body').removeClass(body_class);
+			
+			if(value == 0)
+			{
+				value = 1;
+				// update body class
+				jQuery('body').addClass(body_class);
+			} 
+			else
+			{
+				value = 0;
+			}
+			// set new value
+			elem.val( value );
+			// update localStorage
+			localStorage.setItem('accessibility_boldface',value);
+			// log in console
+			console.log('Accessibility: Boldface: '+value);
+		});
+	});
+	/* ]]> */
+	</script>
+</div>
+<!-- !black-white -->
+<div id="black-white_widget" class="black-white_widget widget">
+	<label for="black-white">Black / White</label> 
+	<input name="black-white" type="checkbox" value="0">
+	<script>
+	/* <![CDATA[ */
+	jQuery(document).ready(function() 
+	{
+		var value = Number( localStorage.getItem('accessibility_black-white') );
+		var elem = jQuery('#accessibility_widget input[name="black-white"]');
+		var body_class = 'acc_black-white';
+		if(value > 0)
+		{
+			// set value and mark as checked
+			elem.val(1);
+			elem.attr('checked',true);
+			// set body class
+			jQuery('body').addClass(body_class);
+		}
+		// event listener
+		elem.change(function() 
+		{
+			// remove current body class
+			jQuery('body').removeClass(body_class);
+			
+			if(value == 0)
+			{
+				value = 1;
+				// update body class
+				jQuery('body').addClass(body_class);
+			} 
+			else
+			{
+				value = 0;
+			}
+			// set new value
+			elem.val( value );
+			// update localStorage
+			localStorage.setItem('accessibility_black-white',value);
+			// log in console
+			console.log('Accessibility: Black/White: '+value);
+		});
+	});
+	/* ]]> */
+	</script>
+</div>
+<!-- !reverse colors -->
+<div id="reverse_colors_widget" class="reverse_colors widget">
+	<label for="">Reverse colors</label> 
+	<input name="reverse_colors" type="checkbox" value="0">
+	<script>
+	/* <![CDATA[ */
+	jQuery(document).ready(function() 
+	{
+		var value = Number( localStorage.getItem('accessibility_reverse_colors') );
+		var elem = jQuery('#accessibility_widget input[name="reverse_colors"]');
+		var body_class = 'acc_reverse_colors';
+		if(value > 0)
+		{
+			// set value and mark as checked
+			elem.val(1);
+			elem.attr('checked',true);
+			// set body class
+			jQuery('body').addClass(body_class);
+		}
+		// event listener
+		elem.change(function() 
+		{
+			// remove current body class
+			jQuery('body').removeClass(body_class);
+			
+			if(value == 0)
+			{
+				value = 1;
+				// update body class
+				jQuery('body').addClass(body_class);
+			} 
+			else
+			{
+				value = 0;
+			}
+			// set new value
+			elem.val( value );
+			// update localStorage
+			localStorage.setItem('accessibility_reverse_colors',value);
+			// log in console
+			console.log('Accessibility: Reverse Colors: '+value);
+		});
+	});
+	/* ]]> */
+	</script>
+</div>
+	
+</div>
