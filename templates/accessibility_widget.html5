@@ -15,7 +15,7 @@ if(!$objPage->hasJQuery)
 <div id="fontsize_widget" class="fontsize_widget widget">
 	<label for="fontsize"><i class="fa fa-text-height"></i>Fontsize</label>
 	<div class="checkbox-container">
-		<input name="fontsize" id="fontsize" type="number" class="input" min="-5" max="5" step="1" value="0">
+		<input name="fontsize" id="fontsize" type="number" class="input" min="-5" max="5" step="1" value="0" tabindex="10">
 	</div>
 	<script>
 	/* <![CDATA[ */
@@ -50,7 +50,7 @@ if(!$objPage->hasJQuery)
 <div id="default_fonts_widget" class="default_fonts widget"> 
 	<label for="default_fonts"><i class="fa fa-font"></i>Default fonts only</label>
 	<div class="checkbox-container">
-		<input name="default_fonts" id="default_fonts" type="checkbox" class="checkbox" value="0">
+		<input name="default_fonts" id="default_fonts" type="checkbox" class="checkbox" value="0" tabindex="11">
 	</div>
 	
 	<script>
@@ -99,7 +99,7 @@ if(!$objPage->hasJQuery)
 <div id="contrast_widget" class="contrast_widget widget">
 	<label for="contrast"><i class="fa fa-adjust"></i>High contrast</label>
 	<div class="checkbox-container">
-		<input name="contrast" id="contrast" type="checkbox" class="checkbox" value="0">
+		<input name="contrast" id="contrast" type="checkbox" class="checkbox" value="0" tabindex="12">
 	</div>
 	<script>
 	/* <![CDATA[ */
@@ -154,7 +154,7 @@ if(!$objPage->hasJQuery)
 <div id="boldface_widget" class="boldface_widget widget">
 	<label for="boldface"><i class="fa fa-bold"></i>Boldface</label>
 	<div class="checkbox-container">
-		<input name="boldface" id="boldface" type="checkbox" class="checkbox" value="0">
+		<input name="boldface" id="boldface" type="checkbox" class="checkbox" value="0" tabindex="13">
 	</div>
 	<script>
 	/* <![CDATA[ */
@@ -203,7 +203,7 @@ if(!$objPage->hasJQuery)
 <div id="focus_widget" class="focus_widget widget">
 	<label for="focus"><i class="fa fa-keyboard-o"></i>Show focus</label>
 	<div class="checkbox-container">
-		<input name="focus" id="focus" type="checkbox" class="checkbox" value="0"> 
+		<input name="focus" id="focus" type="checkbox" class="checkbox" value="0" tabindex="14"> 
 	</div>
 	<script>
 	/* <![CDATA[ */
@@ -253,7 +253,7 @@ if(!$objPage->hasJQuery)
 <div id="black-white_widget" class="black-white_widget widget">
 	<label for="black-white"><i class="fa fa-shield"></i>Black / White</label>
 	<div class="checkbox-container">
-		<input name="black-white" id="black-white" type="checkbox" class="checkbox" value="0">
+		<input name="black-white" id="black-white" type="checkbox" class="checkbox" value="0" tabindex="15">
 	</div>
 	<script>
 	/* <![CDATA[ */
@@ -308,7 +308,7 @@ if(!$objPage->hasJQuery)
 <div id="reverse_colors_widget" class="reverse_colors widget">
 	<label for="reverse_colors"><i class="fa fa-pencil-square"></i>Reverse colors</label> 
 	<div class="checkbox-container">
-		<input name="reverse_colors" id="reverse_colors" type="checkbox" class="checkbox" value="0">
+		<input name="reverse_colors" id="reverse_colors" type="checkbox" class="checkbox" value="0" tabindex="16">
 	</div>
 	<script>
 	/* <![CDATA[ */
