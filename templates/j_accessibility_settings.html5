@@ -7,7 +7,7 @@ jQuery(document).ready(function()
 	// Fontsize
 	if( Number( localStorage.getItem('accessibility_fontsize') ) != 0)
 	{
-		jQuery('html,body').addClass('acc_fontsize_1');
+		jQuery('html,body').addClass('acc_fontsize_'+Number( localStorage.getItem('accessibility_fontsize') ));
 	}	
 	// Default fonts active
 	if( Number( localStorage.getItem('accessibility_default_fonts') ) > 0)
