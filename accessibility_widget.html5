@@ -99,6 +99,7 @@ if(!$objPage->hasJQuery)
 		var value = Number( localStorage.getItem('accessibility_contrast') );
 		var elem = jQuery('#accessibility_widget input[name="contrast"]');
 		var body_class = 'acc_contrast';
+		var css_file = '<link id="css_acc_contrast" rel="stylesheet" type="text/css" href="acc_contrast.css">';
 		if(value > 0)
 		{
 			// set value and mark as checked
@@ -107,7 +108,7 @@ if(!$objPage->hasJQuery)
 			// set body class
 			jQuery('html,body').addClass(body_class);
 			// include css file
-			jQuery('head').append('<link id="css_acc_contrast" rel="stylesheet" type="text/css" href="acc_contrast.css">');
+			jQuery('head').append(css_file);
 		}
 		// event listener
 		elem.change(function() 
@@ -123,7 +124,7 @@ if(!$objPage->hasJQuery)
 				// update body class
 				jQuery('html,body').addClass(body_class);
 				// include css file
-				jQuery('head').append('<link id="css_acc_contrast" rel="stylesheet" type="text/css" href="acc_contrast.css">')
+				jQuery('head').append(css_file)
 			} 
 			else
 			{
@@ -197,6 +198,7 @@ if(!$objPage->hasJQuery)
 		var value = Number( localStorage.getItem('accessibility_black-white') );
 		var elem = jQuery('#accessibility_widget input[name="black-white"]');
 		var body_class = 'acc_black-white';
+		var css_file = '<link id="css_acc_black-white" rel="stylesheet" type="text/css" href="acc_black-white.css">';
 		if(value > 0)
 		{
 			// set value and mark as checked
@@ -205,7 +207,7 @@ if(!$objPage->hasJQuery)
 			// set body class
 			jQuery('html,body').addClass(body_class);
 			// include css file
-			jQuery('head').append('<link id="css_acc_black-white" rel="stylesheet" type="text/css" href="acc_black-white.css">');
+			jQuery('head').append(css_file);
 		}
 		// event listener
 		elem.change(function() 
@@ -221,7 +223,7 @@ if(!$objPage->hasJQuery)
 				// update body class
 				jQuery('html,body').addClass(body_class);
 				// include css file
-				jQuery('head').append('<link id="css_acc_black-white" rel="stylesheet" type="text/css" href="acc_black-white.css">');
+				jQuery('head').append(css_file);
 			} 
 			else
 			{
@@ -249,6 +251,7 @@ if(!$objPage->hasJQuery)
 		var value = Number( localStorage.getItem('accessibility_reverse_colors') );
 		var elem = jQuery('#accessibility_widget input[name="reverse_colors"]');
 		var body_class = 'acc_reverse_colors';
+		var css_file = '<link id="css_acc_reverse_colors" rel="stylesheet" type="text/css" href="acc_reverse_colors.css">';
 		if(value > 0)
 		{
 			// set value and mark as checked
@@ -257,7 +260,7 @@ if(!$objPage->hasJQuery)
 			// set body class
 			jQuery('html,body').addClass(body_class);
 			// include css file
-			jQuery('head').append('<link id="css_acc_reverse_colors" rel="stylesheet" type="text/css" href="acc_reverse_colors.css">');
+			jQuery('head').append(css_file);
 		}
 		// event listener
 		elem.change(function() 
@@ -265,15 +268,14 @@ if(!$objPage->hasJQuery)
 			// remove current body class
 			jQuery('html,body').removeClass(body_class);
 			// remove css file
-			jQuery('link#css_acc_acc_reverse_colors').remove();
-			
+			jQuery('link#css_acc_reverse_colors').remove();
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
 				jQuery('html,body').addClass(body_class);
 				// include css file
-				jQuery('head').append('<link id="css_acc_reverse_colors" rel="stylesheet" type="text/css" href="acc_reverse_colors.css">');
+				jQuery('head').append(css_file);
 			} 
 			else
 			{
