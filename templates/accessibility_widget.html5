@@ -317,7 +317,7 @@ if(!$objPage->hasJQuery)
 		var value = Number( localStorage.getItem('accessibility_reverse_colors') );
 		var elem = jQuery('#accessibility_widget input[name="reverse_colors"]');
 		var body_class = 'acc_reverse_colors';
-		var css_file = '<link id="css_acc_reverse_colors" rel="stylesheet" type="text/css" href="acc_reverse_colors.css">';
+		var css_file = '<link id="css_acc_reverse_colors" rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_reverse_colors.css">';
 		if(value > 0)
 		{
 			// set value and mark as checked

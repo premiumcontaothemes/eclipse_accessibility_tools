@@ -1,3 +1,6 @@
+<?php
+	$GLOBALS['TL_CSS'][] = "files/cto_layout/css/accessiblity_widget/acc_widget_banner.css";
+?>
 <div id="accessibility_banner" class="medium">
 	<a href="" tabindex="1">
 		<i></i>
