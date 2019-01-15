@@ -1,4 +1,11 @@
-<a href="" id="accessibility_banner" class="medium" tabindex="1">
-	<i></i>
-	<h6>BEDIENUNGSHILFE</h6>
-</a>
+<div id="accessibility_banner" class="medium">
+	<a href="" tabindex="1">
+		<i></i>
+		<h6>BEDIENUNGSHILFEN</h6>
+	</a>
+	<div id="accessibility_banner_lang">
+		<a href="#" class="en" tabindex="2"></a>
+		<a href="#" class="de" tabindex="3"></a>
+		<a href="#" class="pl" tabindex="4"></a>
+	</div>
+</div>
