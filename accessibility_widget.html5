@@ -23,18 +23,18 @@ if(!$objPage->hasJQuery)
 		// set value
 		elem.val(value);
 		// set body class
-		jQuery('body').addClass(body_class+value);
+		jQuery('html,body').addClass(body_class+value);
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
-			jQuery('body').removeClass(body_class+value);
+			jQuery('html,body').removeClass(body_class+value);
 			// get new value
 			value = jQuery(this).val();
 			// update localStorage
 			localStorage.setItem('accessibility_fontsize',value);
 			// update body class
-			jQuery('body').addClass(body_class+value);
+			jQuery('html,body').addClass(body_class+value);
 			// log in console
 			console.log('Accessibility: Fontsize: '+value);
 		});
@@ -59,19 +59,19 @@ if(!$objPage->hasJQuery)
 			elem.val(1);
 			elem.attr('checked',true);
 			// set body class
-			jQuery('body').addClass(body_class);
+			jQuery('html,body').addClass(body_class);
 		}
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
-			jQuery('body').removeClass(body_class);
+			jQuery('html,body').removeClass(body_class);
 			
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
-				jQuery('body').addClass(body_class);
+				jQuery('html,body').addClass(body_class);
 			} 
 			else
 			{
@@ -105,19 +105,19 @@ if(!$objPage->hasJQuery)
 			elem.val(1);
 			elem.attr('checked',true);
 			// set body class
-			jQuery('body').addClass(body_class);
+			jQuery('html,body').addClass(body_class);
 		}
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
-			jQuery('body').removeClass(body_class);
+			jQuery('html,body').removeClass(body_class);
 			
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
-				jQuery('body').addClass(body_class);
+				jQuery('html,body').addClass(body_class);
 			} 
 			else
 			{
@@ -151,19 +151,19 @@ if(!$objPage->hasJQuery)
 			elem.val(1);
 			elem.attr('checked',true);
 			// set body class
-			jQuery('body').addClass(body_class);
+			jQuery('html,body').addClass(body_class);
 		}
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
-			jQuery('body').removeClass(body_class);
+			jQuery('html,body').removeClass(body_class);
 			
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
-				jQuery('body').addClass(body_class);
+				jQuery('html,body').addClass(body_class);
 			} 
 			else
 			{
@@ -197,19 +197,19 @@ if(!$objPage->hasJQuery)
 			elem.val(1);
 			elem.attr('checked',true);
 			// set body class
-			jQuery('body').addClass(body_class);
+			jQuery('html,body').addClass(body_class);
 		}
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
-			jQuery('body').removeClass(body_class);
+			jQuery('html,body').removeClass(body_class);
 			
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
-				jQuery('body').addClass(body_class);
+				jQuery('html,body').addClass(body_class);
 			} 
 			else
 			{
@@ -243,19 +243,19 @@ if(!$objPage->hasJQuery)
 			elem.val(1);
 			elem.attr('checked',true);
 			// set body class
-			jQuery('body').addClass(body_class);
+			jQuery('html,body').addClass(body_class);
 		}
 		// event listener
 		elem.change(function() 
 		{
 			// remove current body class
-			jQuery('body').removeClass(body_class);
+			jQuery('html,body').removeClass(body_class);
 			
 			if(value == 0)
 			{
 				value = 1;
 				// update body class
-				jQuery('body').addClass(body_class);
+				jQuery('html,body').addClass(body_class);
 			} 
 			else
 			{
