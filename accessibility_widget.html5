@@ -1,4 +1,5 @@
 <?php 
+$GLOBALS['TL_CSS'][] = "files/cto_layout/css/accessiblity_widget/acc_widget.css";
 // load jquery
 global $objPage;global $objPage;
 if(!$objPage->hasJQuery)
@@ -99,7 +100,7 @@ if(!$objPage->hasJQuery)
 		var value = Number( localStorage.getItem('accessibility_contrast') );
 		var elem = jQuery('#accessibility_widget input[name="contrast"]');
 		var body_class = 'acc_contrast';
-		var css_file = '<link id="css_acc_contrast" rel="stylesheet" type="text/css" href="acc_contrast.css">';
+		var css_file = '<link id="css_acc_contrast" rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_contrast.css">';
 		if(value > 0)
 		{
 			// set value and mark as checked
@@ -187,6 +188,55 @@ if(!$objPage->hasJQuery)
 	/* ]]> */
 	</script>
 </div>
+
+<!-- !boldface -->
+<div id="focus_widget" class="focus_widget widget">
+	<label for="focus">Show focus</label> 
+	<input name="focus" type="checkbox" value="0">
+	<script>
+	/* <![CDATA[ */
+	jQuery(document).ready(function() 
+	{
+		var value = Number( localStorage.getItem('accessibility_focus') );
+		var elem = jQuery('#accessibility_widget input[name="focus"]');
+		var body_class = 'acc_focus';
+		if(value > 0)
+		{
+			// set value and mark as checked
+			elem.val(1);
+			elem.attr('checked',true);
+			// set body class
+			jQuery('html,body').addClass(body_class);
+		}
+		// event listener
+		elem.change(function() 
+		{
+			// remove current body class
+			jQuery('html,body').removeClass(body_class);
+			
+			if(value == 0)
+			{
+				value = 1;
+				// update body class
+				jQuery('html,body').addClass(body_class);
+			} 
+			else
+			{
+				value = 0;
+			}
+			// set new value
+			elem.val( value );
+			// update localStorage
+			localStorage.setItem('accessibility_focus',value);
+			// log in console
+			console.log('Accessibility: Focus: '+value);
+		});
+	});
+	/* ]]> */
+	</script>
+</div>
+
+
 <!-- !black-white -->
 <div id="black-white_widget" class="black-white_widget widget">
 	<label for="black-white">Black / White</label> 
@@ -198,7 +248,7 @@ if(!$objPage->hasJQuery)
 		var value = Number( localStorage.getItem('accessibility_black-white') );
 		var elem = jQuery('#accessibility_widget input[name="black-white"]');
 		var body_class = 'acc_black-white';
-		var css_file = '<link id="css_acc_black-white" rel="stylesheet" type="text/css" href="acc_black-white.css">';
+		var css_file = '<link id="css_acc_black-white" rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_black_white.css">';
 		if(value > 0)
 		{
 			// set value and mark as checked
