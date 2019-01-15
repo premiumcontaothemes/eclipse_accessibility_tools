@@ -1,0 +1,206 @@
+/* =============================================================================
+ * banner
+ * ========================================================================== */
+ 
+#accessibility_banner {
+	position: fixed;
+	right: 0;
+	top: 300px;
+	background: #0373b6;
+	border-radius: 10px 0 0 10px;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-left: 3px solid #fff;
+	z-index: 1000000;
+	text-align: center;
+	display: block;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+}
+
+#accessibility_banner i {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUwLjQ5MnB4IiBoZWlnaHQ9IjUwLjQ5MnB4IiB2aWV3Qm94PSIwIDAgNTAuNDkyIDUwLjQ5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTAuNDkyIDUwLjQ5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgaWQ9IkxheWVyXzEiPjwvZz48ZyBpZD0iTGF5ZXJfNCI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTM3LjY0OCwxNS44N2wtNi45MTQsMC44MmMtMy42MzcsMC41NjYtNy4zMzksMC41NjYtMTAuOTc2LDBsLTYuOTE0LTAuODJjLTEuMDMtMC4xODktMi4wMjMsMC40OC0yLjE4OCwxLjQ5Yy0wLjE1NiwwLjk2NywwLjU0NCwxLjg3MSwxLjUzNywyLjA1NWw4LjMxNywxLjE5NGMwLjM3MywwLjA2OSwwLjY0MiwwLjM4NCwwLjY0MiwwLjc1MWwwLDBjMCw1LjQ5NC0wLjY2OCw5Ljc1Ni0yLjQ4MSwxNC45NjJsLTAuOTY2LDIuNzcyYy0wLjM1NCwxLjAyLDAuMTYxLDIuMTU3LDEuMjAyLDIuNTM0YzEuMDg5LDAuMzk2LDIuMjkxLTAuMTYzLDIuNjU5LTEuMjIxbDMuNjc5LTExLjIxM2wzLjY3OSwxMS4yMTNjMC4yODgsMC44MjcsMS4wODUsMS4zNDksMS45MzksMS4zNDljMC4yMTYsMCwwLjQzNy0wLjAzNCwwLjY1My0wLjEwNGMxLjA3MS0wLjM1LDEuNjQ2LTEuNDczLDEuMjg1LTIuNTA5bC0wLjk4Mi0yLjgyMWMtMS44MTMtNS4yMDYtMi40ODEtOS40NjgtMi40ODEtMTQuOTYybDAsMGMwLTAuMzY3LDAuMjctMC42ODIsMC42NDItMC43NTFsOC4zMTctMS4xOTRjMC45OTMtMC4xODQsMS42OTMtMS4wODcsMS41MzctMi4wNTNDMzkuNjcyLDE2LjM1MiwzOC42NzksMTUuNjgsMzcuNjQ4LDE1Ljg3eiIvPjxjaXJjbGUgZmlsbD0iI0ZGRkZGRiIgY3g9IjI1LjI0NiIgY3k9IjExLjk0NSIgcj0iMy43MzEiLz48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNDMuMDk4LDcuMzk1QzM4LjMyOSwyLjYyNiwzMS45ODksMCwyNS4yNDYsMFMxMi4xNjMsMi42MjYsNy4zOTUsNy4zOTVTMCwxOC41MDMsMCwyNS4yNDZzMi42MjYsMTMuMDgzLDcuMzk1LDE3Ljg1MnMxMS4xMDgsNy4zOTUsMTcuODUyLDcuMzk1czEzLjA4My0yLjYyNiwxNy44NTItNy4zOTVzNy4zOTUtMTEuMTA4LDcuMzk1LTE3Ljg1MlM0Ny44NjYsMTIuMTYzLDQzLjA5OCw3LjM5NXogTTI1LjI0Niw0Ny4wNzdjLTEyLjAzOCwwLTIxLjgzMS05Ljc5My0yMS44MzEtMjEuODMxUzEzLjIwOCwzLjQxNSwyNS4yNDYsMy40MTVzMjEuODMxLDkuNzkzLDIxLjgzMSwyMS44MzFTMzcuMjg0LDQ3LjA3NywyNS4yNDYsNDcuMDc3eiIvPjwvZz48L3N2Zz4=);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	display: inline-block;
+}
+
+#accessibility_banner h6 {
+	color: #fff;
+	margin: 0;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+/* variante: small */
+#accessibility_banner.small {
+	padding: 10px;
+}
+
+#accessibility_banner.small i {
+	width: 25px;
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+#accessibility_banner.small h6 {
+	color: #fff;
+	font-size: 0.8rem;
+	margin: 0;
+}
+
+/* variante: medium */
+#accessibility_banner.medium {
+	padding: 15px;
+}
+
+#accessibility_banner.medium i {
+	width: 35px;
+	height: 35px;
+	margin-bottom: 5px;
+}
+
+#accessibility_banner.medium h6 {
+	color: #fff;
+	font-size: 0.85rem;
+	margin: 0;
+}
+
+/* variante: large */
+#accessibility_banner.large {
+	padding: 20px;
+}
+
+#accessibility_banner.large i {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+#accessibility_banner.large h6 {
+	color: #fff;
+	font-size: 1rem;
+	margin: 0;
+}
+
+/* =============================================================================
+ * accessibility_widget
+ * ========================================================================== */
+
+#accessibility_widget {
+	max-width: 650px;
+	margin-left: auto; 
+	margin-right: auto;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+	padding: 30px;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 1.3rem;
+}
+
+#accessibility_widget i {
+	display: inline-block;
+	width: 35px;
+}
+
+#accessibility_widget .widget {
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+#accessibility_widget .widget label {
+	width: 70%;
+	float: left;
+}
+
+#accessibility_widget .input {
+	width: 50px;
+	display: inline-block;
+	padding: 3px;
+	font-size: 1.2rem;
+}
+
+#accessibility_widget .checkbox-container {
+	float: right;
+	width: 30%;
+	text-align: right;
+}
+
+/* =============================================================================
+ * acc_default_fonts
+ * ========================================================================== */
+
+body.acc_default_fonts h1,
+body.acc_default_fonts h2, 
+body.acc_default_fonts h3, 
+body.acc_default_fonts h4, 
+body.acc_default_fonts h5, 
+body.acc_default_fonts h6, 
+body.acc_default_fonts .ce_revolutionslider_text.bold, 
+body.acc_default_fonts .font_headline, 
+body.acc_default_fonts,
+body.acc_default_fonts .font_serif_2, 
+body.acc_default_fonts .font-serif-2 {
+	font-family: Arial, Verdana, sans-serif;
+}
+
+/* =============================================================================
+ * acc_fontsize
+ * ========================================================================== */
+ 
+html.acc_fontsize_1, body.acc_fontsize_1 {
+	font-size: 17px;
+}
+
+html.acc_fontsize_2, body.acc_fontsize_2 {
+	font-size: 19px;
+}
+
+html.acc_fontsize_3, body.acc_fontsize_3 {
+	font-size: 21px;
+}
+
+html.acc_fontsize_4, body.acc_fontsize_4 {
+	font-size: 22px;
+}
+
+html.acc_fontsize_5, body.acc_fontsize_5 {
+	font-size: 24px;
+}
+
+html.acc_fontsize_-1, body.acc_fontsize_-1 {
+	font-size: 14px;
+}
+
+html.acc_fontsize_-2, body.acc_fontsize_-2 {
+	font-size: 13px;
+}
+
+html.acc_fontsize_-3, body.acc_fontsize_-3 {
+	font-size: 12px;
+}
+
+html.acc_fontsize_-4, body.acc_fontsize_-4 {
+	font-size: 11px;
+}
+
+html.acc_fontsize_-5, body.acc_fontsize_-5 {
+	font-size: 10px;
+}
+ 
+/* =============================================================================
+ * acc_boldface
+ * ========================================================================== */
+
+.acc_boldface * {font-weight: bold!important;}
+
+/* =============================================================================
+ * acc_focus
+ * ========================================================================== */
+
+.acc_focus *:focus {
+	outline-style: solid;
+	outline-color: red;
+	outline-width: thick;
+}

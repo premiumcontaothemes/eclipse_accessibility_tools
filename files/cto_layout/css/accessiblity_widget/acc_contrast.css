@@ -1,0 +1,1486 @@
+/* =============================================================================
+ * layout
+ * ========================================================================== */
+
+.header,
+.header .inside {
+	background: #fff!important;
+}
+
+#top, 
+#top .inside {
+	background: blue!important;
+}
+
+#top, 
+#top .mod_top_mail a,
+#top .mod_socials a i {
+	color: #fff;
+}
+
+#footer {
+	background: blue;
+}
+
+#footer,
+#footer p,
+#footer a,
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6 {
+	color: #fff;
+}
+
+#footer .inside a:hover {
+	color: #fff;
+}
+
+#bottom {
+	background: blue;
+}
+
+#bottom
+#bottom *,
+#bottom p,
+#bottom a,
+#bottom .inside,
+#bottom .inside a,
+#bottom h1,
+#bottom h2,
+#bottom h3,
+#bottom h4,
+#bottom h5,
+#bottom h6 {
+	color: #fff;
+}
+
+#bottom .inside a:hover {
+	color: #fff;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.font_headline,
+body {
+	color: blue;
+}
+
+/* =============================================================================
+ * menu
+ * ========================================================================== */
+
+.header .mainmenu ul li a, 
+.header .mainmenu ul li ul a.active, 
+.header .ce_search_label i, 
+.header .mod_langswitcher .mod_langswitcher_inside, 
+.header .header_metanavi a, 
+.header .mod_socials a {
+	color: blue;
+}
+
+/* =============================================================================
+ * accent color
+ * ========================================================================== */
+
+.bg-accent {
+	background-color: blue;
+}
+
+p a {
+	color: blue;
+}
+
+.divider-v2 h1:after,
+.divider-v2 h2:after,
+.divider-v2 h3:after,
+.divider-v2 h4:after,
+.dividerv h5:after,
+.divider-v2 h6:after,
+h1.divider-v2:after,
+h2.divider-v2:after,
+h3.divider-v2:after,
+h4.divider-v2:after,
+h5.divider-v2:after,
+h6.divider-v2:after {
+	background: blue;
+}
+
+hr.divider_3:before {
+	background: blue;
+}
+
+hr.divider_3:before {
+	background: blue;
+}
+
+.divider_4_first {
+	border: 3px solid blue;
+}
+
+.divider_4_second {
+	background-color: blue;
+}
+
+.divider_4::after, .divider_4::before {
+	background-color: blue;
+}
+
+.divider_5 i {
+	color: blue;
+}
+
+.mainmenu ul ul {
+	border-top: 2px solid blue;
+}
+
+#top-wrapper.fixed .mainmenu a.active, 
+#top-wrapper.fixed .mainmenu a.trail {
+	color: blue;
+}
+
+.mainmenu ul ul li a:hover:not(.menuheader):not(.megamenu),
+.mainmenu ul ul li a.active,
+.mainmenu ul ul li a.trail:not(.megamenu) {
+	background: blue!important;
+}
+
+body.header-dark .fixed .mainmenu ul li a.trail, 
+body.header-dark .fixed .mainmenu ul li a.active {
+	color: blue;
+}
+
+.header-light #top-wrapper.fixed .mainmenu a.active,
+.header-light #top-wrapper.fixed .mainmenu a.trail {
+	color: blue;
+}
+
+.subnav a {
+	color: blue;
+}
+
+#nav-open-btn:before {
+	background: blue;
+}
+
+.ce_table table th {
+	background: blue;
+}
+
+.ce_tabs .tabs.classic ul li.active, 
+.ce_tabs .tabs.classic ul li:hover {
+	border-color: blue;
+}
+
+.ce_tabs .tabs.horizontal ul li:hover a,
+.ce_tabs .tabs.horizontal ul li.active a {
+	background: blue;
+}
+
+.ce_teambox .image .overlay {
+	background: blue;
+}
+
+.ce_teambox .email a {
+	color: blue;
+}
+
+blockquote a {
+	color: blue;
+}
+
+.header .mod_search .search-content {
+	background: blue;
+}
+
+.ce_iconbox.version2 i {
+	background: blue;
+}
+
+.ce_iconbox .link {
+	color: blue;
+}
+
+.ce_testimonial a {
+	color: blue;
+}
+
+.ce_accordion .toggler:before {
+  color:blue;
+}
+
+.mod_calendar th.head {
+  background:blue;
+  border-top:1px solid blue;
+  border-right:1px solid blue;
+  border-left:1px solid blue;
+}
+
+.mod_calendar th.previous a,
+.mod_calendar th.next a {
+  background-color:blue;
+}
+
+.pagination li span.current {
+	background: blue;
+}
+
+.pagination li a:hover {
+	color: blue;
+}
+
+.mod_faqpage h3:before {
+	color: blue;
+}
+
+.mod_search .submit {
+	border: 1px solid blue;
+}
+
+input:focus,
+textarea:focus {
+  border:1px solid blue;
+}
+
+form fieldset legend {
+  background-color:blue;
+}
+
+input.submit[type="submit"],
+button.submit[type="submit"] {
+	background: blue;
+}
+
+input.submit[type="submit"]:hover,
+button.submit[type="submit"]:hover {
+	background: blue;
+}
+
+.ce_youtube_background.overlay .YTPOverlay {
+	background-color: blue;
+}
+
+.label-accent {
+	background: blue;
+}
+
+.ce_hyperlink a,
+a.btn {
+	background: blue;
+	border-color: blue;
+}
+
+.ce_hyperlink a.link-white,
+a.btn.link-white {
+	color: blue;
+}
+
+.ce_hyperlink a.link-white:hover,
+a.btn.link-white:hover {
+	background: blue;
+}
+
+.ce_hyperlink a.outline,
+a.btn.outline {
+	color: blue;
+}
+
+.newslist h2,
+.newslist h2 a {
+	color: blue;
+}
+
+.newslist .news-left .news-date {
+	background: blue;
+}
+
+.newsteaser .date {
+	background: blue;
+}
+
+#portfolio_filter a.selected,
+#portfolio_filter a:hover {
+	background: blue;
+}
+
+.ce_chartbar .chart_data {
+	background: blue;
+}
+
+.color-accent,
+.color-accent p,
+.color-accent i,
+.color-accent h1,
+.color-accent h2,
+.color-accent h3,
+.color-accent h4,
+.color-accent h5,
+.color-accent h6,
+.color-accent a:not(.link-white) {
+	color: blue;
+}
+
+blockquote {
+	border-color: blue;
+}
+
+.ce_pricetable .pricetable.highlight .title {
+	background: blue;
+}
+
+.ce_imagebox_v2 .ce_url a {
+	background: blue;
+}
+
+.ce_gallery .content {
+	background: blue;
+}
+
+.ce_headertext h1:after, 
+.ce_headertext h2:after, 
+.ce_headertext h3:after, 
+.ce_headertext h4:after, 
+.ce_headertext h5:after, 
+.ce_headertext h6:after {
+	background: blue;
+}
+
+.ce_countup i {
+	color: blue;
+}
+
+.newslist-v3 .date {
+	background: blue;
+}
+
+.ce_bgimage.offset.offset-bg-accent:before {
+	background-color: blue;
+}
+
+.ce_leadertext.version2 .divider-first {
+	border: 3px solid blue;
+}
+
+.ce_leadertext.version2 .divider-second {
+	background-color: blue;
+}
+
+.ce_leadertext.version2 .divider:after, 
+.ce_leadertext.version2 .divider:before {
+	background-color: blue;
+}
+
+.ce_accordion .toggler i.fa {
+	background: blue;
+}
+
+.newsteaser_v3 .news-overlay i {
+	background-color: blue;
+}
+
+.newslist-v3 .subheadline {
+	color: blue;
+}
+
+.ce_teambox .function {
+	color: blue;
+}
+
+.ce_tabs .tabs.horizontal-clean ul li.active:after {
+	border-color: blue transparent transparent transparent;
+}
+
+.subheadline-v2 {
+	color: blue;
+}
+
+.ce_timeline .timeline-item .timeline-item-title {
+	background: blue;
+}
+
+.ce_portfoliofilter.default a.selected, 
+.ce_portfoliofilter.default a:hover {
+	background: blue;
+}
+
+.ce_portfoliofilter.only-icon a.selected i:before, 
+.ce_portfoliofilter.only-icon a:hover i:before {
+	background: blue;
+	border-color: blue;
+}
+
+.ce_tabs .tabs.horizontal-clean ul li.active a {
+	color: blue;
+}
+
+.ce_revolutionslider_hyperlink {
+	background: blue;
+	border-color: blue;
+}
+
+#top .mod_top_mail a:hover,
+#top .mod_login_top:hover,
+#top .mod_search:hover,
+#top .mod_langswitcher span:hover  {
+	background: blue;
+}
+
+#top .mod_langswitcher ul li a:hover {
+	color: blue;
+}
+
+.ce_headline_extended.version2 .divider-first {
+	border-color: blue;
+}
+
+.ce_headline_extended.version2 .divider:after, 
+.ce_headline_extended.version2 .divider:before,
+.ce_headline_extended.version2 .divider-second {
+	background-color: blue;
+}
+
+.mod_portfoliolist .item .linkbar a {
+	background-color: blue;
+}
+
+.mod_portfoliolist .item .linkbar a:hover {
+	color: blue;
+}
+
+.mod_portfoliolist .item .subline {
+	background-color: blue;
+}
+
+form .input-group-addon {
+	background: blue;
+	border-color: blue;
+}
+
+body .picker--focused .picker__day--selected, 
+body .picker__day--selected, 
+body .picker__day--selected:hover,
+body .picker--focused .picker__day--highlighted, 
+body .picker__day--highlighted:hover, 
+body .picker__day--infocus:hover, 
+body .picker__day--outfocus:hover,
+body .picker--focused .picker__list-item--highlighted, 
+body .picker__list-item--highlighted:hover, 
+body .picker__list-item:hover {
+	background-color: blue;
+}
+
+body .picker__list-item--highlighted, 
+body .picker__list-item:hover {
+	border-color: blue;
+}
+
+.ce_video_background .video-overlay  {
+	background-color: blue;
+}
+
+.ce_text_imagebox.imagebox_version2 .inside,
+.ce_text_imagebox.imagebox_version3 .inside {
+	background-color: blue;
+}
+
+#offcanvas-top {
+	background: blue;
+}
+
+.cookiebar {
+	background: blue;
+}
+
+.ce_bgimage_content_start.bg-accent .bg_overlay {
+	background: blue;
+}
+
+.newslist-timeline:before,
+.newslist-timeline-both h4:before {
+	border-color: blue;
+}
+
+.ce_divider_extended.version4 span {
+	background: blue;
+}
+
+.ce_divider_extended.version5 {
+	background: blue;
+}
+
+#top a {
+	color: blue;
+}
+
+.ce_linkbox h4 {
+	color: blue;
+}
+
+.body_bottom .mod_search .search-content {
+	background: blue;
+}
+
+.mod_customcataloglist.cc_immorealty .entry.top_object .cc_immorealty_top {
+	background: blue;
+}
+
+.mod_customcatalogfilter.immorealty_filter .filter_range .ui-slider-range {
+	background: blue;
+}
+
+.mod_customcatalogreader.cc_immorealty .property-furnishing li i {
+	color: blue;
+}
+
+.mod_customcatalogreader.cc_immorealty .price {
+	background: blue;
+}
+
+.mod_customcataloglist .cc_immorealty_slider .category  {
+	background: blue;
+}
+
+.mod_customcataloglist.cc_immorealty .customelements_notelist input {
+	background-color: blue;
+}
+
+.mod_customcataloglist.cc_cardealer .item-rightside .item-content-col2 {
+	color: blue;
+}
+
+.mod_customcatalogfilter.cardealer_filter .filter_range .ui-slider-range {
+	background-color: blue;
+}
+
+.mod_customcatalogreader.cc_cardealer .single-price {
+	color: blue;
+}
+
+.mod_customcatalogreader.cc_cardealer .single-price strong {
+	background-color: blue;
+}
+
+.mod_customcataloglist.cc_cardealer .item-highlight-icon {
+	background-color: blue;
+}
+
+.mod_customcataloglist .cc_cardealer_slider .state {
+	background-color: blue;
+}
+
+.mod_customcataloglist .cc_cardealer_slider .price strong {
+	color: blue;
+}
+
+.ce_linkbox a i {
+	background-color: blue;
+}
+
+.ce_fullscreen_gallery.version3 .bold {
+	background-color: blue;
+}
+
+form.style2 {
+	background: blue;
+}
+
+.ce_linkbox .ce_linkbox_banner {
+	background-color: blue; 
+}
+
+.custommenu li:hover {
+	background-color: blue;
+}
+
+.ce_featured_tab li .ce_headline .headline {
+	color: blue;
+}
+
+.ce_featured_tab li.active {
+	background-color: blue;
+}
+
+.ce_headerimage.version3 .ce_headline .headline {
+	background: blue;
+}
+
+.ce_headerimage.version3 .subline {
+	background: blue;
+}
+
+.mod_portfoliolist_v4 .item a:hover {
+	background: blue;
+}
+
+.mod_customcatalogteaser.cc_accommodations .entry:hover .item-content {
+	background: blue;
+}
+
+.ce_revolutionslider_hyperlink.light {
+	color: blue;
+}
+
+.ce_frame_start.style3 .ce_frame_start_inside {
+	border-color: blue;
+}
+
+.mod_portfoliolist_teaser_3 .info,
+.mod_portfoliolist_teaser_3 .info a {
+	color: blue;
+}
+
+.newsteaser_v7:hover h5 {
+	color: blue;
+}
+
+.ce_divider_extended.version10 svg {
+	fill: blue;
+}
+
+.cd-horizontal-timeline .filling-line {
+	background-color: blue;
+}
+
+.cd-horizontal-timeline .events a.older-event::after {
+	border-color: blue;
+}
+
+.no-touch .cd-horizontal-timeline .events a:hover::after,
+.cd-horizontal-timeline .events a.selected::after {
+	background-color: blue;
+	border-color: blue;
+}
+
+.mod_portfoliolist_v7 .comments {
+	background-color: blue;
+}
+
+.mod_portfoliolist_v7 .subline {
+	background-color: blue;
+}
+
+.mod_portfoliolist_v7 .item:hover .item-bottom a {
+	color: blue;
+}
+
+.cd-horizontal-timeline .ce_text em {
+	color: blue;
+}
+
+.mod_eventlist_v2 .title a {
+	color: blue;
+}
+
+.ce_imagemap .hotspot.small .circle {
+	box-shadow: 0 0 0 5px blue;
+}
+
+.ce_pricecard.style2.highlight .ce_pricecard_inside {
+	background: blue;
+}
+
+.mod_eventlist_v3 h4,
+.mod_eventlist_v3 h4 a {
+	color: blue;
+}
+
+.mod_eventlist_v3 .meta-info i {
+	color: blue;
+}
+
+.cd-horizontal-timeline time:before,
+.cd-horizontal-timeline .location:before {
+	color: blue;
+}
+
+.cd-horizontal-timeline .more a {
+	background: blue;
+}
+
+body .mainmenu ul li a:hover:before,
+body .mainmenu ul li a.trail:before,
+body .mainmenu ul li a.active:before {
+	background-color: blue;
+}
+
+.ce_popup_start .popup_close {
+	color: blue;
+}
+
+.ce_popup_start .ce_popup_content {
+	border-color: blue;
+}
+
+.mod_eventlist_v4 i.fa-location-arrow {
+	background-color: blue;
+}
+
+.ce_hyperlink_lightbox_video.hyperlink_color_accent svg polygon  {
+	fill: blue;
+}
+
+.ce_hyperlink_lightbox_video.hyperlink_color_accent svg circle {
+	stroke: blue;
+}
+
+.mod_portfoliolist_demos .item .overlay {
+	background-color: blue;
+}
+
+.mod_portfoliolist_demos .item h5:hover {
+	color: blue;
+}
+
+.ce_iconbox_v3 .ce_iconbox_v3_inside.bg-accent {
+	background-color: blue;
+}
+
+.ce_iconbox_v3 .ce_iconbox_v3_inside.bg-hover-accent:hover {
+	background-color: blue!important;
+}
+
+.ce_iconbox_v3 .headline.headline-color-accent {
+	color: blue;
+}
+
+.ce_iconbox_v3 .subheadline.subheadline-color-accent {
+	color: blue;
+}
+
+.ce_iconbox_v3 .fonticon.fonticon-color-accent {
+	color: blue;
+}
+
+.ce_iconbox_v3:hover.text-hover-accent i,
+.ce_iconbox_v3:hover.text-hover-accent .headline,
+.ce_iconbox_v3:hover.text-hover-accent .subheadline {
+	color: blue!important;
+}
+
+.submenu_v2 li a:hover,
+.submenu_v2 li a.active {
+	color: blue;
+}
+
+.ce_list.list-style2 li.fa:before {
+	color: blue;
+}
+
+.ce_list.list-style3 li.fa:before {
+	color: blue;
+}
+
+.ce_revolutionslider_hyperlink.text-link:after {
+	color: blue;
+}
+
+.ce_download_small .ce_download_small_inside a:after {
+	color: blue;
+} 
+
+.ce_download_small .ce_download_small_inside a {
+	border-color: blue;
+}
+
+.ce_imagemap .circle {
+	box-shadow: 0 0 0 4px blue;
+}
+
+.ce_testimonial_version7 .text_inside:before {
+	background: blue;
+}
+
+.ce_portfoliofilter.port-filter-style3 a.selected {
+	border-color: blue;
+}
+
+form.style8 input.submit[type="submit"],
+form.style8 button.submit[type="submit"] {
+	color: blue;
+}
+
+.ce_image_text_box .ce_image_text_box_banner {
+	background: blue;
+}
+
+.ce_image_text_box.version2 .ce_url a {
+	color: blue;
+}
+
+.ce_grid_gallery_start li:hover .linktext {
+	color: blue;
+}
+
+.mod_quickmenu.style2 a {
+	border-color: blue;
+	color: blue;
+}
+
+.mod_customcataloglist.cc_product_catalog .item-inside:hover {
+	border-color: blue;
+}
+
+.mod_customcatalogteaser.cc_product_catalog .item-highlight-icon {
+	background-color: blue;
+}
+
+.ce_headline_w_buttons.style1 .buttons a:hover {
+	background-color: blue;
+}
+
+.ce_headline_w_buttons.style2 .buttons a.button_one {
+	border-color: blue;
+	color: blue;
+}
+
+.ce_headline_w_buttons.style2 .buttons a.button_two {
+	background-color: blue;
+	border-color: blue;
+}
+
+.ce_headline_w_buttons.style2 .buttons a.button_one:hover {
+	background-color: blue;
+}
+
+.ce_headline_w_buttons.style3 .buttons a.button_one {
+	border-color: blue;
+	color: blue;
+}
+
+.ce_headline_w_buttons.style3 .buttons a.button_two {
+	background-color: blue;
+	border-color: blue;
+}
+
+.ce_headline_w_buttons.style3 .buttons a.button_one:hover {
+	background-color: blue;
+}
+
+.ce_headline_w_buttons.style5 .buttons a.button_one {
+	border-color: blue;
+	color: blue;
+}
+
+.ce_headline_w_buttons.style5 .buttons a.button_two {
+	background-color: blue;
+	border-color: blue;
+}
+
+.ce_headline_w_buttons.style5 .buttons a.button_one:hover {
+	background-color: blue;
+}
+
+.ce_headline_w_buttons.style6 .buttons a.button_one {
+	border-color: blue;
+	color: blue;
+}
+
+.ce_headline_w_buttons.style6 .buttons a.button_two {
+	background-color: blue;
+	border-color: blue;
+}
+
+.ce_headline_w_buttons.style6 .buttons a.button_one:hover {
+	background-color: blue;
+}
+
+.ce_headline_w_buttons.style10 .buttons a:hover {
+	background-color: blue;
+}
+
+.ce_featurelist.style1 li i {
+	color: blue;
+}
+
+.ce_featurelist.style2 span {
+	color: blue;
+}
+
+.ce_featurelist.style2 .icon {
+	color: blue;
+}
+
+.ce_featurelist.style2 li a:hover {
+	background-color: blue;
+}
+
+.ce_featurelist.style5 li span {
+	color: blue;
+}
+
+body .mm-menu a:hover, body .mm-menu a.active, body .mm-menu a.trail,
+body .mm-menu .mm-listview > li.mm-selected > a:not(.mm-next), 
+body .mm-menu .mm-listview > li.mm-selected > span,
+body .mm-menu .mm-listview > li.trail a {
+	background-color: blue;
+}
+
+.header .mainmenu ul li a.highlight span,
+.header .mainmenu ul li a.highlight_square_color_accent span,
+.header .mainmenu ul li a.highlight-square-color-accent span,
+.header .mainmenu ul li a.highlight_rounded_color_accent span,
+.header .mainmenu ul li a.highlight-rounded-color-accent span {
+	background-color: blue;
+}
+
+.header .mainmenu ul li a.highlight_outline_square_color_accent span,
+.header .mainmenu ul li a.highlight-outline-square-color-accent span,
+.header .mainmenu ul li a.highlight_outline_rounded_color_accent span,
+.header .mainmenu ul li a.highlight-outline-rounded-color-accent span {
+	box-shadow: 0 0px 0px 2px blue;
+}
+
+.ce_accordion_v2 .toggler:not(.ui-state-active):hover {
+	color: blue;
+}
+
+.ce_accordion_v2 .toggler.ui-state-active {
+	background: blue;
+}
+
+
+/* =============================================================================
+ * overwrite color - framework.css
+ * ========================================================================== */
+
+/* black */
+.color-accent,
+.color-accent p,
+.color-accent i,
+.color-accent h1,
+.color-accent h2,
+.color-accent h3,
+.color-accent h4,
+.color-accent h5,
+.color-accent h6,
+.color-accent a:not(.link-white),
+.label-secondary,
+.label-info,
+a,
+p a,
+.mainmenu ul li a,
+.mainmenu ul li a.trail,
+.mainmenu ul li a.active,
+.mainmenu ul ul li a,
+.subnav a,
+.pagination li a:hover,
+blockquote a,
+.ce_revolutionslider_hyperlink.outline-dark,
+.ce_table table tfoot td,
+hr.divider_1,
+hr.divider_2,
+hr.divider_3,
+.ce_downloads a span.size,
+.ce_accordion .toggler:hover,
+.ce_accordion .toggler:before,
+.ce_accordion_v2 .toggler:not(.ui-state-active):hover,
+.ce_hyperlink a.link-white,
+a.btn.link-white,
+.ce_hyperlink a.link-white.outline:hover,
+a.btn.link-white.outline:hover,
+.ce_hyperlink a.outline,
+a.btn.outline,
+.ce_hyperlink a.secondary,
+a.btn.secondary,
+.ce_hyperlink a.info,
+a.btn.info,
+.mod_eventreader .info,
+.mod_eventlist_v2 .location,
+.mod_eventlist_v3 .meta-info,
+.mod_faqpage h3:before,
+.newslist .author,
+.newslist .news-dat,
+.newslist .comments,
+.newslist h2,
+.newslist h2 a,
+.subheadline-v2,
+.newslist-v2 .info,
+.newslist-v3 .subheadline,
+.newslist-v3 .info,
+.newslist-v3.news-cat-1 .subheadline,
+.newslist-v3.news-cat-2 .subheadline,
+.newslist-v3.news-cat-3 .subheadline,
+.newslist-v3.news-cat-4 .subheadline,
+.newslist-v4 .info,
+.newslist-v5 .subheadline,
+.newslist-v5 .news-date,
+.newslist-v6 .news-info,
+.newslist-timeline .info,
+.newslist-timeline-both .info div,
+.newsteaser .info,
+.newsteaser_v2 .author,
+.newsteaser_v2 .comments,
+.newsteaser_v3 .info,
+.newsteaser-v4 .subheadline,
+.newsteaser-v4 .info,
+.newsteaser-v4 .info,
+.newsteaser-v4.news-cat-1 .subheadline,
+.newsteaser-v4.news-cat-2 .subheadline,
+.newsteaser-v4.news-cat-3 .subheadline,
+.newsteaser-v4.news-cat-4 .subheadline,
+.newsteaser_v8 .date,
+.newsteaser_v8 .comments,
+.mod_portfoliolist .item .linkbar a:hover,
+.mod_portfoliolist_v7 .teaser,
+.mod_portfoliolist_v7 .item:hover .item-bottom a,
+.cd-horizontal-timeline .info,
+form span.mandatory,
+.newslist .news-date {
+	color: blue;
+}
+
+/* black - important */
+.color-gray,
+.color-gray p,
+.color-gray i,
+.color-gray h1,
+.color-gray h2,
+.color-gray h3,
+.color-gray h4,
+.color-gray h5,
+.color-gray h6,
+.color-gray a:not(.link-white),
+.color-lightgray,
+.color-lightgray p,
+.color-lightgray i,
+.color-lightgray h1,
+.color-lightgray h2,
+.color-lightgray h3,
+.color-lightgray h4,
+.color-lightgray h5,
+.color-lightgray h6,
+.color-lightgray a:not(.link-white),
+.color-darkgray,
+.color-darkgray p,
+.color-darkgray i,
+.color-darkgray h1,
+.color-darkgray h2,
+.color-darkgray h3,
+.color-darkgray h4,
+.color-darkgray h5,
+.color-darkgray h6,
+.color-darkgray a:not(.link-white),
+code, pre, .txt-white pre {
+	color: blue!important;
+}
+
+/* white */
+.ce_download a span.size {
+	color: #fff;
+}
+
+/* white - important */
+.color-white-trnp-50,
+.color-white-trnp-50 p,
+.color-white-trnp-50 i,
+.color-white-trnp-50 h1,
+.color-white-trnp-50 h2,
+.color-white-trnp-50 h3,
+.color-white-trnp-50 h4,
+.color-white-trnp-50 h5,
+.color-white-trnp-50 h6,
+.color-white-trnp-50 a:not(.link-white) {
+	color: #fff!important;
+}
+
+
+/* =============================================================================
+ * overwrite color - styles.css
+ * ========================================================================== */
+
+/* black */
+.header .header_metanavi a,
+.mod_cookiebar_optin .cookie_help_link,
+.mod_cookiebar_optin .cookie_help_close,
+.mod_cookiebar_optin .cookie_privacy_links a,
+.fixed .mainmenu ul li ul li a:not(.active):not(.trail),
+select,
+form.style6 select option {
+	color: blue;
+}
+
+/* black - important */
+.header .header_metanavi li ul li a,
+#top .top_metanavi li ul li a,
+.mainmenu ul ul li a,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: blue!important;
+}
+
+/* white */
+#offcanvas-top,
+#offcanvas-top a,
+.smartmenu-content .subitems_trigger:before {
+	color: #fff;
+}
+
+
+/* =============================================================================
+ * overwrite color - customelements.css
+ * ========================================================================== */
+
+/* black */
+.ce_pricetable .priceinfo,
+.ce_pricetable .rating,
+.ce_headertext p,
+.ce_text_image_bar .subheadline,
+.ce_chartbar.slim .chart_data span,
+.ce_chartbar.slim-x .chart_data span,
+.ce_featured_tab li .ce_headline .headline,
+.ce_testimonial_version6 .additional,
+.ce_testimonial_version6 i,
+.ce_iconbox_v2.style3 .content,
+.ce_iconbox_v3 .headline.headline-color-accent,
+.ce_iconbox_v3 .headline.headline-color-second ,
+.ce_iconbox_v3 .headline.headline-color-lightgray,
+.ce_iconbox_v3 .headline.headline-color-darkgray,
+.ce_iconbox_v3 .subheadline.subheadline-color-accent,
+.ce_iconbox_v3 .subheadline.subheadline-color-second,
+.ce_iconbox_v3 .subheadline.subheadline-color-lightgray,
+.ce_iconbox_v3 .subheadline.subheadline-color-darkgray,
+.ce_iconbox_v3 .fonticon.fonticon-color-accent,
+.ce_iconbox_v3 .fonticon.fonticon-color-second,
+.ce_iconbox_v3 .fonticon.fonticon-color-lightgray,
+.ce_iconbox_v3 .fonticon.fonticon-color-darkgray,
+.ce_linkbox h6,
+.ce_productbox.version1 .price span,
+.ce_productbox.version1 .subheadline,
+.ce_productbox.version2 .price span,
+.ce_productbox.version2 .subheadline,
+.ce_productbox.version3 .price span,
+.ce_productbox.version3 .subheadline,
+.ce_hyperlink-extended a.link-white,
+.ce_hyperlink-extended a.link-white.outline:hover,
+.ce_hyperlink-extended a.outline,
+.ce_hyperlink-extended a.secondary,
+.ce_hyperlink-extended a.info,
+.page_navigation .title,
+.ce_benefitbox .number,
+.ce_headline_w_buttons.style1 .buttons a,
+.ce_headline_w_buttons.style2 .buttons a.button_one,
+.ce_headline_w_buttons.style3 .buttons a.button_one,
+.ce_headline_w_buttons.style5 .buttons a.button_one,
+.ce_headline_w_buttons.style6 .buttons a.button_one,
+.ce_headline_w_buttons.style8 .buttons a.button_one,
+.ce_headline_w_buttons.style10 .buttons a,
+.ce_featurelist.style3 li span {
+	color: blue;
+}
+
+/* black - important */
+.ce_testimonial_version3 .text p,
+.ce_testimonial_version7 .text p,
+.ce_iconbox_v3:hover.text-hover-accent i,
+.ce_iconbox_v3:hover.text-hover-accent .headline,
+.ce_iconbox_v3:hover.text-hover-accent .subheadline,
+.ce_iconbox_v3:hover.text-hover-second i,
+.ce_iconbox_v3:hover.text-hover-second .headline,
+.ce_iconbox_v3:hover.text-hover-second .subheadline,
+.ce_iconbox_v3:hover.text-hover-lightgray i,
+.ce_iconbox_v3:hover.text-hover-lightgray .headline,
+.ce_iconbox_v3:hover.text-hover-lightgray .subheadline,
+.ce_iconbox_v3:hover.text-hover-darkgray i,
+.ce_iconbox_v3:hover.text-hover-darkgray .headline,
+.ce_iconbox_v3:hover.text-hover-darkgray .subheadline,
+.ce_imagebox_v2 .content h1,
+.ce_imagebox_v2 .content h2,
+.ce_imagebox_v2 .content h3,
+.ce_imagebox_v2 .content h4,
+.ce_imagebox_v2 .content h5,
+.ce_imagebox_v2 .content h6,
+.ce_imagebox_v2 .content p,
+.ce_flipbox .ce_flipbox_backside.color-white .ce_flipbox_backside_inside > .ce_url.attribute a {
+	color: blue!important;
+}
+
+/* white */
+.ce_text_image_bar.color-white .subheadline,
+.swiper-button-next:after, 
+.swiper-button-prev:after,
+.ce_infobox_alert .headline,
+.ce_infobox_warning .headline,
+.ce_infobox_info .headline,
+.ce_infobox_success .headline,
+.ce_iconbox_v3 .headline,
+.ce_iconbox_v3 i,
+.ce_iconbox_v3 .ce_image.attribute,
+.color-white .ce_headline_w_buttons.style3 .ce_headline_w_buttons_inside,
+.ce_featurelist.style4 li a,
+.ce_featurelist.style4 li span,
+.ce_featurelist.style4 li .icon,
+.ce_featurelist.style5 li .icon {
+	color: #fff;
+}
+
+
+/* =============================================================================
+ * overwrite color - customcatalog.css
+ * ========================================================================== */
+
+/* black */
+.mod_customcataloglist.cc_immorealty .entry .cc_immorealty_top .place,
+.mod_customcataloglist.cc_immorealty .entry .property-meta,
+.mod_customcataloglist.cc_immorealty .entry .cc_immorealty_bottom .price,
+.mod_customcatalogreader.cc_cardealer .single-print a,
+.mod_customcatalogreader.cc_cardealer .single-mail a,
+.mod_customcatalogreader.cc_cardealer .single-print a:hover,
+.mod_customcatalogreader.cc_cardealer .single-mail a:hover,
+.mod_customcataloglist .notelist-sum .headline,
+.mod_customcataloglist.cc_catalog .brand,
+.mod_customcatalogreader.cc_catalog .single-subheadline,
+.mod_customcatalogreader.cc_catalog .single-print a,
+.mod_customcatalogreader.cc_catalog .single-mail a,
+.mod_customcatalogreader.cc_catalog .single-print a:hover,
+.mod_customcatalogreader.cc_catalog .single-mail a:hover,
+.mod_customcataloglist .notelist-sum .headline,
+.mod_customcataloglist.cc_accommodations .item-description,
+.mod_customcatalogteaser.cc_accommodations .destination,
+.mod_customcatalogreader.cc_accommodations .single-print a,
+.mod_customcatalogreader.cc_accommodations .single-mail a ,
+.mod_customcatalogreader.cc_accommodations .single-print a:hover,
+.mod_customcatalogreader.cc_accommodations .single-mail a:hover,
+.mod_customcataloglist.cc_directory .short_description,
+.mod_customcataloglist.cc_directory .content_bottom,
+.mod_view_switcher li a i,
+.mod_view_switcher li.active,
+.mod_view_switcher li:hover,
+.mod_customcatalogreader.cc_directory .single-short-description,
+.mod_customcatalogreader.cc_directory .single-print a,
+.mod_customcatalogreader.cc_directory .single-mail a,
+.mod_customcataloglist.cc_hotelapart_packages .item-description,
+.mod_customcatalogteaser.cc_hotelapart .item-description,
+.mod_customcatalogreader.cc_hotelapart_packages .single-price-info,
+.mod_customcataloglist.cc_hotelapart_rooms .item-description,
+.mod_customcataloglist.cc_hotelapart_rooms .item-price-add,
+.mod_customcataloglist.cc_hotelapart_rooms .item-persons,
+.mod_customcatalogreader.cc_hotelapart_rooms .single-price-info,
+.mod_customcatalogreader.cc_hotelapart_rooms .single-pricing td span,
+.mod_customcatalog_pricing .item-description,
+.mod_customcatalog_pricing .item-persons,
+.mod_customcatalog_pricing .pricing span,
+.mod_customcatalog_pricing .item-bookinginfo,
+.mod_customcataloglist.cc_product_catalog .swiper-button-next:after, 
+.mod_customcataloglist.cc_product_catalog .swiper-button-prev:after,
+.mod_customcataloglist.cc_product_catalog .brand,
+.mod_customcatalogreader.cc_product_catalog .single-subheadlin,
+.mod_customcatalogreader.cc_product_catalog .single-print a,
+.mod_customcatalogreader.cc_product_catalog .single-mail a,
+.mod_customcatalogreader.cc_product_catalog .single-print a:hover,
+.mod_customcatalogreader.cc_product_catalog .single-mail a:hover,
+.mod_customcatalogreader.cc_booklibrary .single-subheadline,
+.mod_customcatalogreader.cc_booklibrary .single-print a,
+.mod_customcatalogreader.cc_booklibrary .single-mail a,
+.mod_customcatalogreader.cc_booklibrary .single-print a:hover,
+.mod_customcatalogreader.cc_booklibrary .single-mail a:hover,
+.mod_customcatalog_list_sidebar .author,
+.mod_customcatalog_megamenu.cc_booklibrary .price_old {
+	color: blue;
+}
+
+/* =============================================================================
+ * special adjustments
+ * ========================================================================== */
+
+.ce_bgimage.color-white .ce_bgimage-image {
+	background: blue!important;
+}
+
+.ce_calltoaction.color-white {
+	background: blue!important;
+}
+
+.ce_revolutionslider_hyperlink.dark {
+	background: blue;
+}
+
+.ce_iconbox_header a.color-accent {
+	color: #fff!important;
+}
+
+.ce_grid_gallery_start li.grid-item:hover .ce_grid_gallery_overlay {
+	background: #fff;
+}
+
+.ce_headline_w_buttons.style8 .buttons a.button_two,
+.ce_headline_w_buttons.style8 .buttons a.button_one:hover {
+	background: blue;
+}
+
+.ce_sliderStart .slider-control .slider-menu b {
+	border: 2px solid blue;
+}
+
+.ce_sliderStart .slider-control .slider-menu b.active {
+	background: blue;
+}
+
+.ce_headline_extended .background-text {
+	display: none;
+}
+
+input, textarea, select, form select, form fieldset {
+	border-color: blue;
+}
+
+form.style5 input, form.style5 select, form.style5 textarea {
+	background: #fff;
+	border: 1px solid blue;
+	color: blue;
+}
+
+.ce_form form[class^="style"] input::placeholder,
+.ce_form form[class^="style"] textarea::placeholder,
+.ce_form form[class^="style"] input::-webkit-input-placeholder,
+.ce_form form[class^="style"] textarea::-webkit-input-placeholder,
+.ce_form form[class^="style"] input:-moz-placeholder,
+.ce_form form[class^="style"] textarea:-moz-placeholder,
+.ce_form form[class^="style"] input::-moz-placeholder,
+.ce_form form[class^="style"] textarea::-moz-placeholder,
+.ce_form form[class^="style"] input:-ms-input-placeholder,
+.ce_form form[class^="style"] textarea:-ms-input-placeholder {
+	color: blue!important;
+}
+
+#wrapper .ce_iconbox:not(.version2) i {
+	color: blue!important;
+}
+
+#wrapper .ce_iconbox.padding .ce_iconbox_outside {
+	background: #fff!important;
+}
+
+#wrapper .ce_iconbox.padding .ce_iconbox_outside {
+	border: 3px solid blue;
+}
+
+#wrapper .ce_iconbox .headline,
+#wrapper .ce_iconbox p {
+	color: blue!important;
+}
+
+#wrapper .ce_bgimage.color-white .ce_iconbox .headline,
+#wrapper .ce_bgimage.color-white .ce_iconbox p,
+#wrapper .ce_bgimage.color-white .ce_iconbox i {
+	color: #fff!important;
+}
+
+#wrapper .ce_iconbox .ce_iconbox_outside.padding .content {
+	opacity: 1;
+}
+
+.mod_eventteaser_v1 .event {
+	background: blue!important;
+	border-bottom: 5px solid #fff;
+}
+
+.mod_eventlist_v4 .event {
+	background: blue;
+}
+
+.swiper-pagination-bullet-active {
+	background: blue;
+}
+
+.swiper-pagination-bullet {
+	box-shadow: 0 0 0 2px blue;
+	opacity: 1;
+}
+
+.ce_infobox {
+	background: blue;
+}
+
+.ce_infobox i {
+	color: #fff;
+}
+
+.ce_download:not(.ce_download_small) {
+	background: blue;
+}
+
+.ce_chartbar .chart_data {
+	background: blue!important;
+}
+
+.ce_headerimage .content {
+	background: #fff!important;
+}
+
+.ce_headerimage .headline,
+.ce_headerimage .subline {
+	color: blue!important;
+}
+
+.ce_fancy_divider {
+	display: none;
+}
+
+.ce_flipbox .ce_flipbox_frontside,
+.ce_flipbox .ce_flipbox_backside {
+	background: blue!important;
+}
+
+.mod_cookiebar_optin .submit.readonly, 
+.mod_cookiebar_optin .submit.readonly:hover, 
+.mod_cookiebar_optin .submit.readonly:focus {
+	color: blue;
+}
+
+.ce_iconbox_v2.style3 .ce_iconbox_outside {
+	background: #fff;
+}
+
+.ce_headline_extended:not(.color-white) .color-accent {
+	color: blue;
+}
+
+.ce_headline_extended.color-white .color-accent {
+	color: #fff;
+}
+
+.ce_text_image_bar.bg-second h1,
+.ce_text_image_bar.bg-second h2,
+.ce_text_image_bar.bg-second h3,
+.ce_text_image_bar.bg-second h4,
+.ce_text_image_bar.bg-second h5,
+.ce_text_image_bar.bg-second h6,
+.ce_text_image_bar.bg-second p,
+.ce_text_image_bar.bg-second .font_headline {
+	color: #fff;
+}
+
+.header .smartmenu .smartmenu-trigger .line, 
+.header .smartmenu .smartmenu-trigger .line:before, 
+.header .smartmenu .smartmenu-trigger .line:after {
+	background: blue;
+}
+
+.ce_text_imagebox.color-white .ce_text_imagebox_image {
+	background: blue!important;
+}
+
+.header.original .mainmenu ul li a.trail,
+.header.original .mainmenu ul li a.active,
+.header.cloned .mainmenu ul li a.trail,
+.header.cloned .mainmenu ul li a.active {
+	color: red;
+}
+
+#offcanvas-top .mod_login input.submit, 
+#offcanvas-top .mod_login button.submit {
+	color: blue;
+	background: #fff;
+}
