@@ -1,7 +1,6 @@
 <script>
 /**
- * Apply Accessibility settings on every page
- * Copy this to your <head> or at the end of the <body>
+ * Accessibility settings
  */
 jQuery(document).ready(function() 
 {
