@@ -9,6 +9,7 @@ if($GLOBALS['TL_LANGUAGE'] == 'de')
 	$GLOBALS['TL_LANG']['accessibility_banner']['headline'] = 'Gehe zu: Bedienhilfen-Einstellungen';
 	$GLOBALS['TL_LANG']['accessibility_banner']['title'] = 'Bedienhilfen';
 }
+$arrLang = $GLOBALS['TL_LANG']['accessibility_banner'];
 
 // Go to: settings page (page ids)
 $intPage = 0;
@@ -23,9 +24,9 @@ else if($GLOBALS['TL_LANGUAGE'] == 'fr')
 
 ?>
 <div id="accessibility_banner" class="medium">
-	<a href="<?= $this->replaceInsertTags('{{link_url::'.$intPage.'}}'); ?>" tabindex="1" title="<?= $arrLang['banner']['title']; ?>">
+	<a href="<?= $this->replaceInsertTags('{{link_url::'.$intPage.'}}'); ?>" tabindex="1" title="<?= $arrLang['title']; ?>">
 		<i></i>
-		<h6>BEDIENUNGSHILFEN</h6>
+		<h6><?= $arrLang['headline']; ?></h6>
 	</a>
 	<div id="accessibility_banner_lang">
 		<a href="#" class="en" tabindex="2"></a>
