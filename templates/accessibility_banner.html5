@@ -1,8 +1,29 @@
 <?php
-	$GLOBALS['TL_CSS'][] = "files/cto_layout/css/accessiblity_widget/acc_widget_banner.css";
+$GLOBALS['TL_CSS'][] = "files/cto_layout/css/accessiblity_widget/acc_widget_banner.css";
+
+// language reference
+$GLOBALS['TL_LANG']['accessibility_banner']['headline'] = 'Go to: Accessibility settings';
+$GLOBALS['TL_LANG']['accessibility_banner']['title'] = 'Accessibility';
+if($GLOBALS['TL_LANGUAGE'] == 'de')
+{
+	$GLOBALS['TL_LANG']['accessibility_banner']['headline'] = 'Gehe zu: Bedienhilfen-Einstellungen';
+	$GLOBALS['TL_LANG']['accessibility_banner']['title'] = 'Bedienhilfen';
+}
+
+// Go to: settings page (page ids)
+$intPage = 0;
+if($GLOBALS['TL_LANGUAGE'] == 'de')
+{
+	$intPage = 10; // German settings page id
+}
+else if($GLOBALS['TL_LANGUAGE'] == 'fr')
+{
+	$intPage = 20; // French settings page id
+}
+
 ?>
 <div id="accessibility_banner" class="medium">
-	<a href="" tabindex="1">
+	<a href="<?= $this->replaceInsertTags('{{link_url::'.$intPage.'}}'); ?>" tabindex="1" title="<?= $arrLang['banner']['title']; ?>">
 		<i></i>
 		<h6>BEDIENUNGSHILFEN</h6>
 	</a>
