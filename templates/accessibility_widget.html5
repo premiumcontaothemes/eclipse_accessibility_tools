@@ -11,11 +11,21 @@ if(!$objPage->hasJQuery)
 $GLOBALS['TL_LANG']['accessibility_widget']['headline'] = 'Accesibility settings';
 $GLOBALS['TL_LANG']['accessibility_widget']['fontsize']['label'] = 'Font size';
 $GLOBALS['TL_LANG']['accessibility_widget']['default_fonts']['label'] = 'Default fonts only';
+$GLOBALS['TL_LANG']['accessibility_widget']['high_contrast']['label'] = 'High contrast';
+$GLOBALS['TL_LANG']['accessibility_widget']['boldface']['label'] = 'Boldface';
+$GLOBALS['TL_LANG']['accessibility_widget']['show_focus']['label'] = 'Show focus';
+$GLOBALS['TL_LANG']['accessibility_widget']['black_white']['label'] = 'Black / White';
+$GLOBALS['TL_LANG']['accessibility_widget']['reverse_colors']['label'] = 'Reverse colors';
 if($GLOBALS['TL_LANGUAGE'] == 'de')
 {
-	$GLOBALS['TL_LANG']['accessibility_widget']['headline'] = 'Bedienhilfen';
+	$GLOBALS['TL_LANG']['accessibility_widget']['headline'] = 'Bedienungshilfen';
 	$GLOBALS['TL_LANG']['accessibility_widget']['fontsize']['label'] = 'Schriftgröße';
-	$GLOBALS['TL_LANG']['accessibility_widget']['fontsize']['label'] = 'Standardschriften';
+	$GLOBALS['TL_LANG']['accessibility_widget']['default_fonts']['label'] = 'Standardschriften';
+	$GLOBALS['TL_LANG']['accessibility_widget']['high_contrast']['label'] = 'Hochkontrast';
+	$GLOBALS['TL_LANG']['accessibility_widget']['boldface']['label'] = 'Fettschreibung';
+	$GLOBALS['TL_LANG']['accessibility_widget']['show_focus']['label'] = 'Fokus einblenden';
+	$GLOBALS['TL_LANG']['accessibility_widget']['black_white']['label'] = 'Schwarz / Weiss';
+	$GLOBALS['TL_LANG']['accessibility_widget']['reverse_colors']['label'] = 'Farben umdrehen';
 }
 $arrLang = $GLOBALS['TL_LANG']['accessibility_widget'];
 ?>
@@ -110,7 +120,7 @@ $arrLang = $GLOBALS['TL_LANG']['accessibility_widget'];
 </div>
 <!-- !high constrast -->
 <div id="contrast_widget" class="contrast_widget widget">
-	<label for="contrast"><i class="fa fa-adjust"></i>High contrast</label>
+	<label for="contrast"><i class="fa fa-adjust"></i><?= $arrLang['high_contrast']['label']; ?></label>
 	<div class="checkbox-container">
 		<input name="contrast" id="contrast" type="checkbox" class="checkbox" value="0" tabindex="12">
 	</div>
@@ -165,7 +175,7 @@ $arrLang = $GLOBALS['TL_LANG']['accessibility_widget'];
 </div>
 <!-- !boldface -->
 <div id="boldface_widget" class="boldface_widget widget">
-	<label for="boldface"><i class="fa fa-bold"></i>Boldface</label>
+	<label for="boldface"><i class="fa fa-bold"></i><?= $arrLang['boldface']['label']; ?></label>
 	<div class="checkbox-container">
 		<input name="boldface" id="boldface" type="checkbox" class="checkbox" value="0" tabindex="13">
 	</div>
@@ -214,7 +224,7 @@ $arrLang = $GLOBALS['TL_LANG']['accessibility_widget'];
 
 <!-- !boldface -->
 <div id="focus_widget" class="focus_widget widget">
-	<label for="focus"><i class="fa fa-keyboard-o"></i>Show focus</label>
+	<label for="focus"><i class="fa fa-keyboard-o"></i><?= $arrLang['show_focus']['label']; ?></label>
 	<div class="checkbox-container">
 		<input name="focus" id="focus" type="checkbox" class="checkbox" value="0" tabindex="14"> 
 	</div>
@@ -264,7 +274,7 @@ $arrLang = $GLOBALS['TL_LANG']['accessibility_widget'];
 
 <!-- !black-white -->
 <div id="black-white_widget" class="black-white_widget widget">
-	<label for="black-white"><i class="fa fa-shield"></i>Black / White</label>
+	<label for="black-white"><i class="fa fa-shield"></i><?= $arrLang['black_white']['label']; ?></label>
 	<div class="checkbox-container">
 		<input name="black-white" id="black-white" type="checkbox" class="checkbox" value="0" tabindex="15">
 	</div>
@@ -319,7 +329,7 @@ $arrLang = $GLOBALS['TL_LANG']['accessibility_widget'];
 </div>
 <!-- !reverse colors -->
 <div id="reverse_colors_widget" class="reverse_colors widget">
-	<label for="reverse_colors"><i class="fa fa-pencil-square"></i>Reverse colors</label> 
+	<label for="reverse_colors"><i class="fa fa-pencil-square"></i><?= $arrLang['reverse_colors']['label']; ?></label> 
 	<div class="checkbox-container">
 		<input name="reverse_colors" id="reverse_colors" type="checkbox" class="checkbox" value="0" tabindex="16">
 	</div>

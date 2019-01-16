@@ -93,34 +93,6 @@
 	margin: 0;
 }
 
-/* langswitcher */
-
-#accessibility_banner #accessibility_banner_lang {
-	margin-top: 8px;
-}
-
-#accessibility_banner #accessibility_banner_lang a {
-	display: inline-block;
-	width: 30px;
-	height: 22px;
-	background-size: 100%;
-	overflow: hidden;
-	background-position: center center;
-	margin: 0 2px;
-}
-
-#accessibility_banner #accessibility_banner_lang a.en {
-	background-image: url(../../img/flags/gb.svg);
-}
-
-#accessibility_banner #accessibility_banner_lang a.de {
-	background-image: url(../../img/flags/de.svg);
-}
-
-#accessibility_banner #accessibility_banner_lang a.pl {
-	background-image: url(../../img/flags/pl.svg);
-}
-
 @media only screen and (max-width: 767px) {
 	#accessibility_banner {
 		display: none;

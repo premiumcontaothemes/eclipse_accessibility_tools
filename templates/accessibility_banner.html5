@@ -28,9 +28,4 @@ else if($GLOBALS['TL_LANGUAGE'] == 'fr')
 		<i></i>
 		<h6><?= $arrLang['headline']; ?></h6>
 	</a>
-	<div id="accessibility_banner_lang">
-		<a href="#" class="en" tabindex="2"></a>
-		<a href="#" class="de" tabindex="3"></a>
-		<a href="#" class="pl" tabindex="4"></a>
-	</div>
 </div>
