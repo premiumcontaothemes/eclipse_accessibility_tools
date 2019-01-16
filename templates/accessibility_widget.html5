@@ -6,14 +6,27 @@ if(!$objPage->hasJQuery)
 {
 	$GLOBALS['TL_JAVASCRIPT'][] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'; 
 }
+
+// Language reference
+$GLOBALS['TL_LANG']['accessibility_widget']['headline'] = 'Accesibility settings';
+$GLOBALS['TL_LANG']['accessibility_widget']['fontsize']['label'] = 'Font size';
+$GLOBALS['TL_LANG']['accessibility_widget']['default_fonts']['label'] = 'Default fonts only';
+if($GLOBALS['TL_LANGUAGE'] == 'de')
+{
+	$GLOBALS['TL_LANG']['accessibility_widget']['headline'] = 'Bedienhilfen';
+	$GLOBALS['TL_LANG']['accessibility_widget']['fontsize']['label'] = 'Schriftgröße';
+	$GLOBALS['TL_LANG']['accessibility_widget']['fontsize']['label'] = 'Standardschriften';
+}
+$arrLang = $GLOBALS['TL_LANG']['accessibility_widget'];
 ?>
 
 
+
 <div id="accessibility_widget" class="accessibility_widget">
-<h1>Bedienungshilfen</h1>
+<h1><?= $arrLang['headline']; ?></h1>
 <!-- fontsize -->
 <div id="fontsize_widget" class="fontsize_widget widget">
-	<label for="fontsize"><i class="fa fa-text-height"></i>Fontsize</label>
+	<label for="fontsize"><i class="fa fa-text-height"></i><?= $arrLang['fontsize']['label']; ?></label>
 	<div class="checkbox-container">
 		<input name="fontsize" id="fontsize" type="number" class="input" min="-5" max="5" step="1" value="0" tabindex="10">
 	</div>
@@ -48,7 +61,7 @@ if(!$objPage->hasJQuery)
 </div>
 <!-- !default fonts -->
 <div id="default_fonts_widget" class="default_fonts widget"> 
-	<label for="default_fonts"><i class="fa fa-font"></i>Default fonts only</label>
+	<label for="default_fonts"><i class="fa fa-font"></i><?= $arrLang['default_fonts']['label']; ?></label>
 	<div class="checkbox-container">
 		<input name="default_fonts" id="default_fonts" type="checkbox" class="checkbox" value="0" tabindex="11">
 	</div>
