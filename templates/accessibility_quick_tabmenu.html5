@@ -1,0 +1,13 @@
+<div id="accessibility_tabmenu">
+	<?php if($GLOBALS['TL_LANGUAGE'] == 'de') { ?>
+	<a href="<?= $this->replaceInsertTags('{{env::request}}'); ?>#accessibility_mainmenu" tabindex="1" accesskey="1">Zum Hauptmenü</a>
+	<a href="<?= $this->replaceInsertTags('{{env::request}}'); ?>#main" tabindex="1" accesskey="2">Zum Inhalt</a>
+	<a href="<?= $this->replaceInsertTags('{{link_url::XX}}'); ?>" tabindex="1" accesskey="3">Zur Kontaktseite</a>
+	<?php } ?>
+	
+	<?php if($GLOBALS['TL_LANGUAGE'] == 'en') { ?>
+	<a href="<?= $this->replaceInsertTags('{{env::request}}'); ?>#accessibility_mainmenu" tabindex="1" accesskey="1">Go to mainmenu</a>
+	<a href="<?= $this->replaceInsertTags('{{env::request}}'); ?>#main" tabindex="1" accesskey="2">Go to content</a>
+	<a href="<?= $this->replaceInsertTags('{{link_url::XX}}'); ?>" tabindex="1" accesskey="3">Go to contact page</a>
+	<?php } ?>
+</div>
