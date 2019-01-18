@@ -120,3 +120,50 @@ html.acc_fontsize_-5, body.acc_fontsize_-5 {
 	outline-color: red;
 	outline-width: thick;
 }
+
+/* =============================================================================
+ * accessibleDropDowns
+ * ========================================================================== */
+ 
+/* replace display none */
+.mainmenu ul ul,
+.mainmenu ul ul ul {
+	display: block;
+	left: -10000px;
+}
+
+#top .top_metanavi li ul {
+	display: block;
+	left: -10000px;
+}
+
+.mod_langswitcher ul {
+	display: block;
+	left: -10000px;	
+}
+
+/* show menu */
+.mainmenu ul li:hover > ul,
+.mainmenu ul li.hover > ul {
+	left: 0;
+}
+
+.mainmenu ul ul li:hover > ul,
+.mainmenu ul ul li.hover > ul {
+	left: 100%;
+}
+
+.mainmenu ul li.megamenu:hover .megamenu-wrapper,
+.mainmenu ul li.megamenu.hover .megamenu-wrapper {
+	display: table;
+}
+
+#top .top_metanavi li:hover ul,
+#top .top_metanavi li.hover ul {
+	left: 0;
+}
+
+.mod_langswitcher .mod_langswitcher_inside:hover ul,
+.mod_langswitcher .mod_langswitcher_inside.hover ul {
+	left: 0;
+}

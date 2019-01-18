@@ -55,4 +55,53 @@ jQuery(document).ready(function()
 		}
 	}	
 });
+
+/**
+ * accessibleDropDowns
+ */
+
+/* mainmenu */
+jQuery(document).ready(function() {
+	jQuery(".mainmenu, .top_metanavi").accessibleDropDown();
+});
+
+jQuery.fn.accessibleDropDown = function () {
+	var el = jQuery(this);
+	
+	jQuery("a", el).focus(function() {
+	    jQuery(this).parents("li").addClass("hover");
+	}).blur(function() {
+	    jQuery(this).parents("li").removeClass("hover");
+	});
+}
+
+/* langswitcher */
+jQuery(document).ready(function() {
+	jQuery(".mod_langswitcher").accessibleLangwitcher();
+});
+
+jQuery.fn.accessibleLangwitcher = function () {
+	var el = jQuery(this);
+	
+	jQuery("a", el).focus(function() {
+	    jQuery(this).parents(".mod_langswitcher_inside").addClass("hover");
+	}).blur(function() {
+	    jQuery(this).parents(".mod_langswitcher_inside").removeClass("hover");
+	});
+}
+
+/* megamenu */
+jQuery(document).ready(function() {
+	jQuery(".mainmenu li.megamenu").accessibleMegamenu();
+});
+
+jQuery.fn.accessibleMegamenu = function () {
+	var el = jQuery(this);
+
+	jQuery("a", el).focus(function() {
+	    jQuery(this).parents("li").addClass("hover");
+	}).blur(function() {
+	    jQuery(this).parents("li").removeClass("hover");
+	});
+}
 </script>
