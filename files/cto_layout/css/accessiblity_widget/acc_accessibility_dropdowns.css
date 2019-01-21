@@ -48,3 +48,10 @@
 .mod_navigation.mainmenu a.invisible {
 	display: none;
 }
+
+.mod_navigation.mainmenu *:focus,
+.mod_langswitcher *:focus {
+	outline-style: solid;
+	outline-color: red;
+	outline-width: thin;
+}
