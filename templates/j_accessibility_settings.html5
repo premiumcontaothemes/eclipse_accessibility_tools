@@ -60,7 +60,7 @@ jQuery(document).ready(function()
  * accessibleDropDowns
  */
 
-/* mainmenu */
+// mainmenu
 jQuery(document).ready(function() {
 	jQuery(".mainmenu, .top_metanavi").accessibleDropDown();
 });
@@ -75,7 +75,7 @@ jQuery.fn.accessibleDropDown = function () {
 	});
 }
 
-/* langswitcher */
+// langswitcher
 jQuery(document).ready(function() {
 	jQuery(".mod_langswitcher").accessibleLangwitcher();
 });
@@ -90,7 +90,7 @@ jQuery.fn.accessibleLangwitcher = function () {
 	});
 }
 
-/* megamenu */
+// megamenu
 jQuery(document).ready(function() {
 	jQuery(".mainmenu li.megamenu").accessibleMegamenu();
 });
