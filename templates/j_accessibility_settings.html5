@@ -4,6 +4,13 @@
  */
 jQuery(document).ready(function() 
 {
+	// add css files
+	jQuery('head').append('<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_accessibility_dropdowns.css">');
+	jQuery('head').append('<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_boldface.css">');
+	jQuery('head').append('<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_default_fonts.css">');
+	jQuery('head').append('<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_focus.css">');
+	jQuery('head').append('<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_fontsize.css">');
+	
 	// Fontsize
 	if( Number( localStorage.getItem('accessibility_fontsize') ) != 0)
 	{
@@ -60,7 +67,7 @@ jQuery(document).ready(function()
  * accessibleDropDowns
  */
 
-// mainmenu
+// mainmenu + metanavi
 jQuery(document).ready(function() {
 	jQuery(".mainmenu, .top_metanavi").accessibleDropDown();
 });
@@ -87,21 +94,6 @@ jQuery.fn.accessibleLangwitcher = function () {
 	    jQuery(this).parents(".mod_langswitcher_inside").addClass("hover");
 	}).blur(function() {
 	    jQuery(this).parents(".mod_langswitcher_inside").removeClass("hover");
-	});
-}
-
-// megamenu
-jQuery(document).ready(function() {
-	jQuery(".mainmenu li.megamenu").accessibleMegamenu();
-});
-
-jQuery.fn.accessibleMegamenu = function () {
-	var el = jQuery(this);
-
-	jQuery("a", el).focus(function() {
-	    jQuery(this).parents("li").addClass("hover");
-	}).blur(function() {
-	    jQuery(this).parents("li").removeClass("hover");
 	});
 }
 </script>
