@@ -4,7 +4,8 @@
  
 /* replace display none */
 .mainmenu ul ul,
-.mainmenu ul ul ul {
+.mainmenu ul ul ul,
+.mainmenu ul li.open-left ul.level_3 {
 	display: block;
 	left: -10000px;
 }
@@ -33,6 +34,11 @@
 .mainmenu ul li.megamenu:hover .megamenu-wrapper,
 .mainmenu ul li.megamenu.hover .megamenu-wrapper {
 	display: table;
+}
+
+.mainmenu ul li.open-left:hover ul.level_3,
+.mainmenu ul li.open-left.hover ul.level_3 {
+	left: -200px;
 }
 
 #top .top_metanavi li:hover ul,
