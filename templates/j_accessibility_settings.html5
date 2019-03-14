@@ -3,7 +3,7 @@ $GLOBALS['TL_HEAD'][] = '<link rel="stylesheet" type="text/css" href="files/cto_
 $GLOBALS['TL_HEAD'][] = '<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_boldface.css">';
 $GLOBALS['TL_HEAD'][] = '<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_default_fonts.css">';
 $GLOBALS['TL_HEAD'][] = '<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_focus.css">';
-$GLOBALS['TL_HEAD'][] = '<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_fontsize.css';
+$GLOBALS['TL_HEAD'][] = '<link rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_fontsize.css">';
 ?>
 
 <script>
