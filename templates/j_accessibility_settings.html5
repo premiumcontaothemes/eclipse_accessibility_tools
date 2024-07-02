@@ -7,94 +7,96 @@ $GLOBALS['TL_HEAD'][] = '<link rel="stylesheet" type="text/css" href="files/cto_
 ?>
 
 <script>
-/**
- * Accessibility settings
- */
-jQuery(document).ready(function() 
-{
-	// Fontsize
-	if( Number( localStorage.getItem('accessibility_fontsize') ) != 0)
-	{
-		jQuery('html,body').addClass('acc_fontsize_'+Number( localStorage.getItem('accessibility_fontsize') ));
-	}	
-	// Default fonts active
-	if( Number( localStorage.getItem('accessibility_default_fonts') ) > 0)
-	{
-		jQuery('html,body').addClass('acc_default_fonts');
-	}
-	// show focus
-	if( Number( localStorage.getItem('accessibility_focus') ) > 0)
-	{
-		jQuery('html,body').addClass('acc_focus');
-	}
-	// Black / White
-	if( Number( localStorage.getItem('accessibility_black-white') ) > 0)
-	{
-		jQuery('html,body').addClass('acc_black-white');
-		
-		if( jQuery('link#css_acc_black-white').length < 1 )
-		{
-			jQuery('head').append('<link id="css_acc_black-white" rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_black_white.css">');
-		}
-	}
-	// High contrast active
-	if( Number( localStorage.getItem('accessibility_contrast') ) > 0)
-	{
-		jQuery('html,body').addClass('acc_contrast');
-		
-		if( jQuery('link#css_acc_contrast').length < 1 )
-		{
-			jQuery('head').append('<link id="css_acc_contrast" rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_contrast.css">');
-		}
-	}
-	// Boldface active
-	if( Number( localStorage.getItem('accessibility_boldface') ) > 0)
-	{
-		jQuery('html,body').addClass('acc_boldface');
-	}
-	// Reverse colors active
-	if( Number( localStorage.getItem('accessibility_reverse_colors') ) > 0)
-	{
-		jQuery('html,body').addClass('acc_reverse_colors');
-		
-		if( jQuery('link#css_acc_reverse_colors').length < 1 )
-		{
-			jQuery('head').append('<link id="css_acc_reverse_colors" rel="stylesheet" type="text/css" href="files/cto_layout/css/accessiblity_widget/acc_reverse_colors.css">');
-		}
-	}	
+jQuery(document).ready(function($) {
+    const storedKeys = ['activeButtons'];
+    let animationInProgress = false;
+
+    function saveToLocalStorage(key, value) {
+        localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    function getFromLocalStorage(key) {
+        return JSON.parse(localStorage.getItem(key));
+    }
+
+    function applySavedSettings() {
+        const activeButtons = getFromLocalStorage('activeButtons') || [];
+        activeButtons.forEach(buttonClass => {
+            $('.accessibility-tools .tool-button[data-body-class="' + buttonClass + '"]').addClass('active');
+            $('body').addClass(buttonClass);
+        });
+    }
+
+    function resetSettings() {
+        $('.accessibility-tools .tool-button.active').removeClass('active');
+        $('body').removeClass(function (index, className) {
+            return (className.match(/(^|\s)body-class\S+/g) || []).join(' ');
+        });
+        saveToLocalStorage('activeButtons', []);
+        storedKeys.forEach(function(key) {
+            localStorage.removeItem(key);
+        });
+        closeTools();
+    }
+
+    function closeTools() {
+        const $tools = $('#accessibility-tools');
+        if (!$tools.hasClass('open')) return;
+        $tools.removeClass('open');
+        setTimeout(function() {
+            $tools.css('visibility', 'hidden');
+        }, 600); // Matches the transition duration
+        $('#open-tools').html('<i class="fa fa-universal-access"></i><small class="shortcut-text">Ctrl+<br>Shift+A</small>');
+        animationInProgress = false;
+    }
+
+    function openTools() {
+        const $tools = $('#accessibility-tools');
+        if ($tools.hasClass('open')) return;
+        $tools.css('visibility', 'visible');
+        $tools.addClass('open');
+        $('#open-tools').html('<i class="fa fa-times"></i><small class="shortcut-text">Ctrl+<br>Shift+A</small>');
+        animationInProgress = false;
+    }
+
+    $('#open-tools').on('click', function() {
+        if (animationInProgress) return;
+        animationInProgress = true;
+        const $tools = $('#accessibility-tools');
+        if ($tools.hasClass('open')) {
+            closeTools();
+        } else {
+            openTools();
+        }
+    });
+
+    $('.close-button, .save-button').on('click', closeTools);
+
+    $('.accessibility-tools .tool-button').on('click', function() {
+        const bodyClass = $(this).data('body-class');
+        $(this).toggleClass('active');
+        $('body').toggleClass(bodyClass);
+
+        const activeButtons = [];
+        $('.accessibility-tools .tool-button.active').each(function() {
+            activeButtons.push($(this).data('body-class'));
+        });
+        saveToLocalStorage('activeButtons', activeButtons);
+    });
+
+    $('.accessibility-tools .reset-button').on('click', resetSettings);
+
+    // Keyboard shortcuts
+    $(document).on('keydown', function(e) {
+        if (e.ctrlKey && e.shiftKey && e.which === 65) { // Ctrl+Shift+A
+            $('#open-tools').click();
+        } else if (e.which === 27) { // ESC
+            closeTools();
+        }
+    });
+
+    applySavedSettings();
 });
 
-/**
- * accessibleDropDowns
- */
 
-// mainmenu + metanavi
-jQuery(document).ready(function() {
-	jQuery(".mainmenu, .top_metanavi").accessibleDropDown();
-});
-
-jQuery.fn.accessibleDropDown = function () {
-	var el = jQuery(this);
-	
-	jQuery("a", el).focus(function() {
-	    jQuery(this).parents("li").addClass("hover");
-	}).blur(function() {
-	    jQuery(this).parents("li").removeClass("hover");
-	});
-}
-
-// langswitcher
-jQuery(document).ready(function() {
-	jQuery(".mod_langswitcher").accessibleLangwitcher();
-});
-
-jQuery.fn.accessibleLangwitcher = function () {
-	var el = jQuery(this);
-	
-	jQuery("a", el).focus(function() {
-	    jQuery(this).parents(".mod_langswitcher_inside").addClass("hover");
-	}).blur(function() {
-	    jQuery(this).parents(".mod_langswitcher_inside").removeClass("hover");
-	});
-}
 </script>
