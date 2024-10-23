@@ -24,7 +24,7 @@ else if($GLOBALS['TL_LANGUAGE'] == 'fr')
 
 ?>
 <div id="accessibility_banner" class="medium">
-	<a href="<?= $this->replaceInsertTags('{{link_url::'.$intPage.'}}'); ?>" tabindex="1" title="<?= $arrLang['title']; ?>">
+	<a href="<?= \Contao\System::getContainer()->get('contao.insert_tag.parser')->replace('{{link_url::'.$intPage.'}}'); ?>" tabindex="1" title="<?= $arrLang['title']; ?>">
 		<i></i>
 		<h6><?= $arrLang['headline']; ?></h6>
 	</a>
